@@ -42,10 +42,19 @@ Expected OUTPUT for this sample
 
 */
 
-function getFoodCategories(foods) {
-}
+ function getFoodCategories(foods) {
+   return foods.map(thingToEat => {
+     if (thingToEat.isVegetarian) {
+       return `${thingToEat.food} is suitable for vegetarians`;
+    } else {
+       return `${thingToEat.food} is not suitable for vegetarians`;
+    }
+   });
+ };
 
-
+//function getFoodCategories(foods) {
+  //return foods.map( bouffe => bouffe.isVegetarian ? `${bouffe.food} is suitable for vegetarians` : `${bouffe.food} is not suitable for vegetarians`)
+//}
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;

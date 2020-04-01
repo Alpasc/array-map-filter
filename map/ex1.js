@@ -43,17 +43,17 @@ function getStringsLength(strings) {
 //   return strings.length;
 // }
 
-// function getStringsLength(strings) {
-//   return strings.map(food => `${food} contains ${food.length} characters`);
-// }
-
 function getStringsLength(strings) {
-  const arr = [];
-  for (let x = 0; x < strings.length; x++) {
-    arr.push(`${strings[x]} contains ${strings[x].length} characters`)
-  }
-  return arr
+  return strings.map(food => `${food} contains ${food.length} characters`);
 }
+
+// function getStringsLength(strings) {
+//   const arr = [];
+//   for (let x = 0; x < strings.length; x++) {
+//     arr.push(`${strings[x]} contains ${strings[x].length} characters`)
+//   }
+//   return arr
+// }
 
 /* var numbers = [1, 2, 3, 4];
 var new_numbers = numbers.map(function(number){

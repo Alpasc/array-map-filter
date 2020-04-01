@@ -24,15 +24,9 @@ Expected OUTPUT for this sample:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
 */
-const familyStark = [];
-
 function keepStarks(names) {
-  for (let index = 0; index < names.length; index++){
-    if (name.endWith('Stark')){
-      familyStark.push(name);
-    }
-  }
+  return names.filter(prout => prout.endsWith("Stark"));
 }
-return keepStarks
+
 // DON'T TOUCH THIS!
 module.exports = keepStarks;

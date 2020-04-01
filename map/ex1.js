@@ -26,8 +26,43 @@ Expected OUTPUT for this sample array:
 
 */
 
-function getStringsLength(strings) {
+
+// i = 
+
+/* function getLength(strings) {
+  return strings.length;
 }
+
+
+function getStringsLength(strings) {
+  const len = strings.length;
+  return len.map(strings + " contains " + len + "characters");
+} */
+
+// function getLength(strings) {
+//   return strings.length;
+// }
+
+// function getStringsLength(strings) {
+//   return strings.map(food => `${food} contains ${food.length} characters`);
+// }
+
+function getStringsLength(strings) {
+  const arr = [];
+  for (let x = 0; x < strings.length; x++) {
+    arr.push(`${strings[x]} contains ${strings[x].length} characters`)
+  }
+  return arr
+}
+
+/* var numbers = [1, 2, 3, 4];
+var new_numbers = numbers.map(function(number){
+     return number * 2;
+});
+console.log("Les nombres doublés sont", new_numbers); // [2, 4, 6, 8]*/
+
+
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
